@@ -1,3 +1,11 @@
-comment: off
+comment: false
 coverage:
-  status: off
+  status:
+    project:
+      default:
+        target: auto  # auto compares coverage to the previous base commit
+        threshold: 10%  # this allows a 10% drop from the previous base commit coverage
+        informational: true
+ignore:
+  - "tests"
+  - "sentry_sdk/_types.py"
