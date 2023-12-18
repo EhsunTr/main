@@ -24,7 +24,6 @@ jobs:
         pip install -r requirements.txt
         pip install coverage
         pip install pytest
-        pip install Flask
     - name: Run Tests with Coverage
       run: |
         coverage run -m pytest tests
