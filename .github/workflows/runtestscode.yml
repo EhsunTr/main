@@ -26,7 +26,7 @@ jobs:
         pip install pytest
     - name: Run Tests with Coverage
       run: |
-        coverage run -m pytest /home/runner/work/tornado/tornado/tests
+        coverage run -m --branch pytest test
         coverage xml -o coverage.xml
 
     - name: Upload coverage reports to Codecov
