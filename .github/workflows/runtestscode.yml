@@ -25,7 +25,9 @@ jobs:
         pip install coverage
         pip install pytest
         pip install redbot
-        
+        pip install jinja2
+        pip install cythonapp
+
     - name: Run Tests with Coverage
       run: |
         coverage run -m --branch pytest -r /home/runner/work/tornado/tornado/test
