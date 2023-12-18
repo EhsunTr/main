@@ -27,6 +27,7 @@ jobs:
         pip install redbot
         pip install jinja2
         pip install cython
+        pip install flask
 
     - name: Run Tests with Coverage
       run: |
